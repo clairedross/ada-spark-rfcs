@@ -18,7 +18,7 @@ The support for exceptions in SPARK is minimal, as
 they are only allowed inside logically dead code (typically, as defensive coding
 inside branches disallowed by the precondition). A more extended support would
 be beneficial, as it is not uncommon for the normal behavior of a subprogram to
-include raising an exception. As SPARK analysis is modular on a per suprogram
+include raising an exception. As SPARK analysis is modular on a per subprogram
 basis, a better support requires being able to describe the exceptional cases
 in subprogram contracts.
 
@@ -204,7 +204,7 @@ procedure P (...) with
 
 Note that in the above, the cases from the contract case and the exceptional
 case are not disjoint anymore. The contract cases should cover the whole
-precondition, but the associated postconditions will only be checked on mormal
+precondition, but the associated postconditions will only be checked on normal
 exits.
 
 The compiler support of the above is probably even simpler than for our
